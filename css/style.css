@@ -1,0 +1,91 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body {
+    font-family: 'roboto';
+}
+
+a {
+    text-decoration: none;
+    color: #a1a8ad;
+}
+
+li {
+    list-style-type: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Logo */
+.logo { 
+    width: 10%;
+    display: inline-block;
+}
+
+/*  Menus */
+.left-menu {
+    width: 30%;
+}
+
+.left-menu .left-nav ul>li,
+.right-menu .right-nav ul>li {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.logo-left-container {
+    min-width: 30%;
+}
+
+.right-menu {
+    min-width: 70%;
+    text-align: right;
+}
+
+/* Lang Menu */
+.fas {
+    font-size: 8px;
+}
+
+/* Button */
+.app-btn {
+    background-color: #eb008e;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+
