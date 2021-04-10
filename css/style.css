@@ -151,6 +151,10 @@ body {
     display: none;
 }
 
+.language-menu li {
+    padding: 10px 0;
+}
+
 .fas {
     font-size: 10px;
 }
