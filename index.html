@@ -12,77 +12,122 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <!-- HEADER -->
-    <div class="container flex-row">
+    <header>
+        <div class="container flex-row">
+            <div class="left-part flex-row">
 
                 <!-- Logo -->
-            <div class="logo">
-                <a href="#">
+                <div class="logo">
                     <img src="img/logo-revolut.png" alt="Logo">
-                </a>
+                </div>
+
+                <!-- Personale -->
+                <div class="personale">
+                    <a class="uppercase" href="#">Personale</a>
+                </div>
+
+                <!-- Business -->
+                <div class="business">
+                    <a class="uppercase" href="#">Business</a>
+                </div>
             </div>
 
-            <!-- Left Menu -->
-            <div class="left-menu">
-                <nav class="left-nav">
-                    <ul>
-
-                        <!-- Personale -->
-                        <li>
-                            <a class="uppercase" href="#">Personale</a>
-                        </li>
-
-                        <!-- Business -->
-                        <li>
-                            <a class="uppercase" href="#">Business</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        <!-- Right Menu -->
-        <div class="right-menu">
-            <nav class="right-nav">
-                <ul>
-                    
-                    <!-- Tariffazione -->
+            <div class="right-part">
+                <ul class="right-menu flex-row">
                     <li>
                         <a href="#">Tariffazione</a>
                     </li>
 
-                    <!-- Conti -->
                     <li>
                         <a href="#">Conti</a>
                     </li>
 
-                    <!-- Prodotti -->
-                    <li>
+                    <li class="dropdown-element"> 
                         <a href="#">Prodotti</a>
+
+                        <!-- Dropdown Menu -->
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Trasferimenti di denaro</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Vault</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Gestione budget</a>
+                                </li>
+
+                                <li class="beta-element">
+                                    <a href="#">Perk <span class="beta">beta</span></a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Criptovaluta</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Assicurazione Smartphone</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Assicurazione medica internazionale</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
 
-                    <!-- Azienda -->
-                    <li>
+                    <li class="dropdown-element">
                         <a href="#">Azienda</a>
+
+                        <!-- Dropwdown Menu -->
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Chi siamo</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Dove ci puoi trovare</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Contatti</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
 
-                    <!-- Aiuto -->
                     <li>
                         <a href="#">Aiuto</a>
                     </li>
 
-                    <!-- Lang menu -->
-                    <li>
+                    <li class="language-element">
                         <a href="#">IT<i class="fas fa-chevron-up"></i></a>
+                        <div class="language-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">EN</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">ESP</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
 
-                    <!-- Scarica App Button -->
                     <li>
-                        <div class="app-btn">Scarica App</div>
+                        <a class="app-btn" href="#">Scarica l'app</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </div>
+    </header>
+
 
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

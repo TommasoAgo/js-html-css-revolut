@@ -1,23 +1,22 @@
 /* RESET */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* COMMON */
-body {
-    font-family: 'roboto';
+li {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: #a1a8ad;
 }
 
-li {
-    list-style-type: none;
+/* COMMON */
+body {
+    font-family: 'Roboto';
+    font-size: 15px;
 }
 
 .uppercase {
@@ -34,58 +33,124 @@ li {
     flex-direction: column;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 40px 0;
-    justify-content: space-between;
-    align-items: center;
-}
-
-img {
-    width: 100%;
+.block {
     display: block;
 }
 
+/* Container */
+.container {
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 80%;
+    margin: auto;
+
+    padding: 50px 0;
+}
+
+/* Left Menu */
+.left-part a {
+    color: black;
+}
+
+.left-part {
+    align-items: center;
+}
+
+.personale a:hover,
+.business a:hover {
+    color: grey;
+}
+
 /* Logo */
-.logo { 
-    width: 10%;
-    display: inline-block;
+.logo {
+    width: 100px;
 }
 
-/*  Menus */
-.left-menu {
-    width: 30%;
+.logo img {
+    width: 100%;
 }
 
-.left-menu .left-nav ul>li,
-.right-menu .right-nav ul>li {
-    display: inline-block;
+/* Right Menu */
+.personale,
+.business,
+.right-menu>li {
     padding-left: 30px;
 }
 
-.logo-left-container {
-    min-width: 30%;
+.right-menu a {
+    color: #a0a7ac;
 }
 
-.right-menu {
-    min-width: 70%;
-    text-align: right;
+.right-menu a:hover {
+    color: black;
 }
 
-/* Lang Menu */
-.fas {
-    font-size: 8px;
-}
-
-/* Button */
+/* App Button */
 .app-btn {
-    background-color: #eb008e;
-    color: white;
-    padding: 10px;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 25px;
+    background-color: #f4369c;
+    color: white !important;
+
+    padding: 10px 20px;
+    border-radius: 20px;
 }
 
+/* Slide */
+.dropdown-element {
+    position: relative;
+}
 
+.dropdown-menu {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    width: 300px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    padding: 20px;
+
+    display: none;
+}
+
+.dropdown-menu ul>li {
+    padding: 10px 0;
+}
+
+/* Perk Beta */
+.beta-element {
+    position: relative;
+}
+
+.beta {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+    color: #f4369c;
+
+    font-size: 12px;
+}
+
+/* Language Menu */
+.language-element {
+    position: relative;
+}
+
+.language-menu {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    width: 70px;
+    padding: 20px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    display: none;
+}
+
+.fas {
+    font-size: 10px;
+}
