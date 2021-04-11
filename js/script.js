@@ -20,12 +20,17 @@ $(document).ready(function() {
     })
 
     $('.language-element').mouseenter(function() {
-        $('.fas').removeClass('fa-chevron-up');
-        $('.fas').addClass('fa-chevron-down');
+        $('.arrow').removeClass('fa-chevron-up');
+        $('.arrow').addClass('fa-chevron-down');
     })
 
     $('.language-element').mouseleave(function() {
-        $('.fas').removeClass('fa-chevron-down');
-        $('.fas').addClass('fa-chevron-up');
+        $('.arrow').removeClass('fa-chevron-down');
+        $('.arrow').addClass('fa-chevron-up');
+    })
+
+    // Aggiungo l'evento per il burger menu
+    $('.burger-menu').click(function() {
+        $('.hidden-menu').fadeToggle();
     })
 })
