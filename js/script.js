@@ -11,7 +11,7 @@ $(document).ready(function() {
     })
 
     // Language Menu
-    $('.right-menu .language-element > a').click(function() {
+    $('.language-element > a').click(function() {
         $('.language-menu').slideToggle();
     })
 
